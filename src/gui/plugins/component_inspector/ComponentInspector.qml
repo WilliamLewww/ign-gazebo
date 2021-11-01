@@ -246,27 +246,27 @@ Rectangle {
     }
     ListElement {
       text: "Ball"
-      type: "Light"
+      type: "Joint"
     }
     ListElement {
       text: "Continuous"
-      type: "Light"
+      type: "Joint"
     }
     ListElement {
       text: "Fixed"
-      type: "Light"
+      type: "Joint"
     }
      ListElement {
       text: "Prismatic"
-      type: "Light"
+      type: "Joint"
     }
     ListElement {
       text: "Revolute"
-      type: "Light"
+      type: "Joint"
     }
      ListElement {
       text: "Universal"
-      type: "Light"
+      type: "Joint"
     }
   }
   // The delegate for each section header
