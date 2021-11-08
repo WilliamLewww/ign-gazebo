@@ -64,6 +64,7 @@ Q_INVOKABLE void AirPressure::OnAirPressureNoise(
     double _stdDevBias, double _dynamicBiasStdDev,
     double _dynamicBiasCorrelationTime)
 {
+  igndbg << "here" << std::endl;
   ignition::gazebo::UpdateCallback cb =
       [=](EntityComponentManager &_ecm)
   {

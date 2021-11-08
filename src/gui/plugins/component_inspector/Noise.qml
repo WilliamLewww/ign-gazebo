@@ -51,9 +51,9 @@ Rectangle {
 
   // Signal that a user of this component can connect to in order to receive
   // noise updates 
-  signal onNoiseUpdate(double _mean, double _meanBias, double _stdDev,
-      double _stdDevBias, double _dynamicBiasStdDev,
-      double _dynamicBiasCorrelationTime)
+  function onNoiseUpdate(_mean, _meanBias, _stdDev,
+      _stdDevBias, _dynamicBiasStdDev, _dynamicBiasCorrelationTime) {}
+
 
   // Display the main content
   Column {

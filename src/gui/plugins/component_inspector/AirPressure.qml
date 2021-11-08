@@ -124,10 +124,10 @@ Rectangle {
           dynamicBiasStdDev: model.data[5]
           dynamicBiasCorrelationTime: model.data[6]
 
-          // Connect to the onNoiseUpdate signal in Noise.qml
-          Component.onCompleted: {
-            pressureNoise.onNoiseUpdate.connect(
-                componentInspector.onAirPressureNoise)
+          function onNoiseUpdate(_mean, _meanBias, _stdDev,
+              _stdDevBias, _dynamicBiasStdDev, _dynamicBiasCorrelationTime) {
+            componentInspector.onAirPressureNoise(_mean, _meanBias, _stdDev,
+                _stdDevBias, _dynamicBiasStdDev, _dynamicBiasCorrelationTime);
           }
         }
       }
